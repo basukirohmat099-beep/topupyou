@@ -1,0 +1,17 @@
+{
+  "installed": false,
+  "settings": {
+    "storeName": "TopUp Manual",
+    "baseUrl": "",
+    "paymentInstructions": "Silakan transfer sesuai instruksi admin.",
+    "bankName": "",
+    "bankAccount": "",
+    "accountName": "",
+    "qrisText": "",
+    "contactText": ""
+  },
+  "users": [],
+  "products": [],
+  "orders": [],
+  "vouchers": []
+}

@@ -1,0 +1,12 @@
+{
+  "name": "topup-manual-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Website top up manual tanpa PHP, menggunakan Node.js dan database JSON",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

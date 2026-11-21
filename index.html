@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Website layanan top up manual">
+<title>TopUp Manual</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="#" data-view="home" id="brand">TopUp Manual</a><nav id="nav"></nav></header>
+<main class="container">
+<div id="notice" class="notice hidden"></div>
+<section id="view-home" class="view">
+  <div class="hero"><div><span class="eyebrow">LAYANAN TOP UP MANUAL</span><h1>Top up mudah,<br>pembayaran manual.</h1><p>Pilih produk, buat pesanan, transfer sesuai instruksi, lalu unggah bukti pembayaran.</p><a href="#catalog" class="button light">Lihat produk</a></div><div class="hero-mark">TOP<br><b>UP</b></div></div>
+  <div id="catalog"></div>
+</section>
+<section id="view-login" class="view hidden"><div class="panel narrow"><h1>Masuk</h1><form id="login-form"><label>Username</label><input name="username" required autocomplete="username"><label>Password</label><input name="password" type="password" required autocomplete="current-password"><button>Masuk</button></form></div></section>
+<section id="view-register" class="view hidden"><div class="panel narrow"><h1>Buat akun</h1><p class="muted">Daftar dengan username Telegram (tanpa @), email Google/Gmail, username login, dan password.</p><form id="register-form"><label>Username Telegram (tanpa @)</label><input name="telegram" placeholder="username_telegram"><label>Username untuk login</label><input name="username" required minlength="3" maxlength="24"><label>Email Google / Gmail</label><input name="email" type="email" required><label>Password (minimal 8 karakter)</label><input name="password" type="password" required minlength="8"><button>Daftar</button></form></div></section>
+<section id="view-orders" class="view hidden"><div class="panel"><h1>Riwayat pesanan</h1><div id="orders-list"></div></div></section>
+<section id="view-order" class="view hidden"><div class="panel" id="order-detail"></div></section>
+<section id="view-admin" class="view hidden"><div class="panel"><h1>Panel admin</h1><div class="tabs"><button class="tab active" data-tab="orders">Pesanan</button><button class="tab" data-tab="products">Produk</button><button class="tab" data-tab="vouchers">Voucher</button><button class="tab" data-tab="customers">Pelanggan</button><button class="tab" data-tab="settings">Pengaturan</button></div><div id="admin-content"></div></div></section>
+<section id="view-setup" class="view hidden"><div class="panel narrow"><h1>Instalasi website</h1><p>Buat akun admin pertama. Domain kamu tentukan dan atur sendiri.</p><form id="setup-form"><label>Username admin</label><input name="username" required><label>Email admin</label><input name="email" type="email" required><label>Password admin (minimal 10 karakter)</label><input name="password" type="password" minlength="10" required><button>Instal website</button></form></div></section>
+</main>
+<footer id="footer"></footer>
+<dialog id="checkout-dialog"><form id="checkout-form" method="dialog"><div class="dialog-head"><h2>Buat pesanan</h2><button type="button" class="x" id="close-dialog">×</button></div><input type="hidden" name="productId"><p id="checkout-product"></p><label>Nomor tujuan / ID pelanggan</label><input name="target" required placeholder="Nomor atau ID tujuan"><label>Jumlah</label><input type="number" name="qty" min="1" max="20" value="1"><label>Voucher (opsional)</label><input name="voucher" placeholder="KODE VOUCHER"><button type="submit">Buat pesanan</button></form></dialog>
+<script src="app.js"></script>
+</body></html>
